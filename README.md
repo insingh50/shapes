@@ -1,3 +1,3 @@
 # shapes
 
-[![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](Assets/fragment_test1.mp4)
+[![Watch the video]()](Assets/fragment_test1.mp4)
