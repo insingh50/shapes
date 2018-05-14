@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shapes</title>
+</head>
+<style>
+	*{
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	html{
+		margin: 0;
+		font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+		overflow: hidden;
+	}
+	h1{
+		margin: 0 auto;
+		text-align: center;
+		position: relative;
+		width: 730px;
+		top: 50%;
+		color: white;
+	}
+	h4{
+		margin: 0 auto;
+		text-align: center;
+		position: absolute;
+		top:80%;
+		left: 50%;
+		font-size: 20pt;
+
+
+	}
+	#right{
+		position: absolute;
+		margin: 0;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		fill: black;
+	}
+	#left{
+		position: absolute;
+		margin: 0;
+		top: 0%;
+		left: 0%;
+		z-index: -1;
+		fill: white;
+	}
+	</style>
+<body>
+	<h1 id="main"> Please enter full screen mode (<code>F11/CMD+CONTROL+F</code>) on Safari/Google Chrome before entering </h1>
+	<a href = "Assets/indexstart.html" onmouseover="onOverLeft()"> <h4>ENTER</h4> </a>
+	<svg id="right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+		<g>
+			<polygon id="r" points="1920 0 1920 1080 0 0 1920 0"/>
+		</g>
+	</svg>
+	<svg id="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+		<g>
+			<polygon id="l" points="0 1080 1920 1080 0 0 0 1080" onmouseover="onOverLeft()" onmouseout="onOutLeft()"/>
+		</g>
+	</svg>
+	<script>
+		function onOverLeft(){
+			document.getElementById('right').style.fill='white';
+			document.getElementById('main').style.color = 'black';
+			document.getElementById('left').style.fill='black';
+		}
+		function onOutLeft(){
+			document.getElementById('right').style.fill='black';
+			document.getElementById('main').style.color = 'white';
+			document.getElementById('left').style.fill='white';
+		}
+	</script>
+</body>
+</html>

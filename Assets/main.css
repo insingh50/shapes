@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+}
+html {
+    overflow: hidden;
+}
+svg{
+    height: 100%;
+    width: 100%;
+}
+line{
+    display: none;
+}
+button{
+    display: none;
+    position: absolute;
+    color: black;
+    background: white;
+    border: solid 1px #00002c;
+    padding: 15px 15px;
+}
+button.hover {
+    border-color: #000000;
+    background: rgba(0, 0, 0, 0.041);
+  }
